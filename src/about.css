@@ -1,0 +1,106 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body .sectionAboutUsPage{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    background-color: #168ec3;
+}
+body .sectionAboutUsPage .aboutPage{
+    width: 90%;
+    padding: 20px;
+    border: .5px solid #4786a0;
+    border-radius: 20px;
+    background-color: #276e8cbc;
+}
+body .aboutPage p{
+    color: #f1f1f1;
+    text-align: justify;
+}
+body .sectionAboutUsPage .takeContact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+body .sectionAboutUsPage .takeContact h2{
+    color: #f1f1f1;
+    font-size: 18px;
+    margin: 10px 0;
+}
+body .sectionAboutUsPage .takeContact .btnTakeContact{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body .sectionAboutUsPage .takeContact .wAndCall{
+      width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+}
+body .sectionAboutUsPage .takeContact .wAndCall .whatBtn{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #00ee3b;
+}
+body .sectionAboutUsPage .takeContact .wAndCall .callBtn{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+}
+body .sectionAboutUsPage .takeContact .btnTakeContact .mailUs{
+     display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    border: .5px solid #4786a0;
+    border-radius: 20px;
+    background-color: #276e8cbc;
+    color: #f1f1f1;
+}
+body .sectionAboutUsPage .takeContact .btnTakeContact .mailUs a{
+      color: #f1f1f1;
+}
+body .sectionAboutUsPage .takeContact .btnTakeContact .circle{
+    width: 10px;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+}
+body .sectionAboutUsPage .takeContact .btnTakeContact .fbAndIg{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center;
+}
+body .sectionAboutUsPage .takeContact .btnTakeContact .fbAndIg .fbBtn,
+body .sectionAboutUsPage .takeContact .btnTakeContact .fbAndIg .igBtn{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    color: #f1f1f1;
+    background-color: #5b8b9aac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}

@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family:  "Montserrat", sans-serif;
+     user-select: none;
+}
+body{
+    background-color: #e3dada;
+}
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+body header{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 black;
+    position: sticky;
+    top: 0;
+}
+body header .appBar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+    
+}
+body header .appBar .menuNavBar{
+    display: none;
+}
+body header .appBar .imgLogo p{
+    font-weight: bold;
+ 
+}
+body header .appBar ul{
+    display: flex;
+    justify-content: space-between;  
+}
+body header .appBar ul li{
+    margin:0 20px;
+  
+}
+body header .appBar ul li a{
+    color: #168ec3;
+    font-size: 20px;
+ 
+    font-weight: bold;
+    cursor: pointer;
+}
+body header .appBar ul li a:hover{
+    color: #000;
+}
+body .slide{
+    background: url('./img/banner1.jpg');
+    background-size:cover;
+    box-sizing:border-box;
+    background-repeat:no-repeat;
+   width: 100%;
+   height:100%;
+   padding: 60px 0;
+   margin: 0 0 20px 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   animation: changeBackground 15s linear infinite alternate-reverse;
+}
+/* @keyframes changeBackground{
+    0%{
+         background:url('./img/Banner\ PRODUIT\ FAR.png');
+    }
+    40%{
+         background: url('./img/banner1.jpg');
+    }
+    70%{
+         background: url('./img/banner2.jpg');
+    }
+    100%{
+          background:url('./img/Banner\ PRODUIT\ FAR.png');
+    }   
+} */
+
+body .slide .slideText{
+    width: 50%;
+    color: #f1f1f1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5));
+    border-radius: 10px; 
+    padding: 30px;
+}
+body .slide .btnAcheter{
+    width: 50%;
+    cursor: pointer;
+}
+body .slide a{
+   background: none;
+   border: 1px solid #f1f1f1;
+   border-radius: 10px;
+   padding: 20px;
+   color: #f1f1f1;
+   font-size: 30px;
+   width:auto;
+   transition: linear .1s;
+}
+body .slide a:hover{
+    background-color:#f1f1f1;
+    color: #168ec3;
+}
+body .sectionProduit{
+   display: flex;
+   flex-direction:column;
+   place-content: center;
+   align-items: center;
+   width:100%;
+}
+body .sectionProduit .h2{
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 25px;
+   
+}
+body .sectionProduit .articles{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    place-items: center;
+    gap: 20px;
+    width: 100%;
+}
+body .sectionProduit .articles .article1{
+    background-color: #f1f1f1;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 350px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    justify-content: center;
+  
+}
+
+body .sectionProduit .articles .article1 .imgProduit{
+    width: 200px;
+    height: 210px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+body .sectionProduit .articles .article1 .imgProduit img{
+    width:100%;
+    height: 100%;
+}
+body .sectionProduit .articles .article1 .nameAndPrice{
+    text-align: center;
+    margin: 20px 0;
+}
+body .sectionProduit .articles .article1 .nameAndPrice h2{
+    font-size: 12px;
+    text-align: center;
+   
+}
+body .sectionProduit .articles .article1 .nameAndPrice span{
+    color: #168ec3;
+    font-weight: bold;
+}
+body .sectionProduit .articles .article1 .btnAcheterArticle{
+    background-color: #168ec3;
+    padding: 10px;
+    color: #f1f1f1;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+      cursor: pointer;
+}
+body .sectionProduit .articles .article1 .btnAcheterArticle img{
+    color: #f1f1f1;
+}
+body .nosFuturProduit h2{
+    text-align: center;
+    font-size: 25px;
+}
+body .sectionAbout h2{
+    text-align: center;
+    font-size: 25px;
+}
+body .sectionAbout .about{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+body .sectionAbout .about .imgAbout img{
+    width: 350px;
+    height: 280px;
+    border-radius: 50px;
+}
+body .sectionAbout .about  .msgAndShowMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    width: 50%;
+}
+body .sectionAbout .about  .msgAndShowMore .showMore{
+    background-color: #168ec3;
+    padding: 10px;
+    border-radius: 20px;
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+body .sectionAbout .about  .msgAndShowMore .showMore a{
+    text-align: center;
+    font-size: 20px;
+    color: #f1f1f1;
+    
+}
+body .sectionContactUs{
+    background-color: #168ec3;
+    text-align: center;
+    padding: 40px;
+}
+body .sectionContactUs h2{
+    color: #f1f1f1;
+    font-size: 25px;
+    letter-spacing: 4px;
+}
+body .sectionContactUs .contactUs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    color: #f1f1f1;
+    margin: 40px 0;
+}
+body .sectionContactUs .contactUs .socialMedias{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 20px;
+}
+body .sectionContactUs .contactUs .contactForms{
+    width: 100%;
+    display: block;
+    padding: 20px 20px 0 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
+}
+body .sectionContactUs .contactUs .contactForms form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+body .sectionContactUs .contactUs .contactForms form .nameAndfirstname{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+body .sectionContactUs .contactUs .contactForms form .telAndMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+body .sectionContactUs .contactUs .contactForms form input{
+    width: 90%;
+    background: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border:none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.2);
+}
+body .sectionContactUs .contactUs .contactForms form label{
+    text-align: left;
+}
+body .sectionContactUs .contactUs .contactForms form input::placeholder,
+body .sectionContactUs .contactUs .contactForms form  textarea::placeholder{
+    color: rgba(0,0,0,.4);
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+body .sectionContactUs .contactUs .contactForms form  textarea{
+    background: none;
+   background-color: #ffffff;
+    padding: 10px;
+    width: 90%;
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.2);
+}
+body .sectionContactUs .contactUs .contactForms form input.envoyer{
+     width: 80%;
+    background: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.2);
+    color: #168ec3;
+    font-size: 15px;
+    transition: .1s ease-in;
+}
+body  .sectionContactUs .contactUs .contactForms form input.envoyer:hover{
+    background-color: #f1f1f1;
+     color: #168ec3;
+      width: 40%;
+}
+body footer{
+    width: 100%;
+}
+body footer .linksToPages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    color: #168ec3;
+    padding: 20px;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.2);
+}
+body footer .linksToPages a{
+        color: #168ec3;
+        cursor: pointer;
+}
+.copyright{
+    color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.2);
+    text-align: center;
+}
+
+@media  screen and (max-width: 610px) {
+    body header .appBar ul{
+    display: none;
+    }
+    body header .appBar .menuNavBar{
+    display: block;
+    }
+    body .slide{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    body .slide .slideText{
+    width: 60%;
+    padding: 20px;
+    }
+     body .slide .slideText p{
+        font-size: 10px;
+        text-align: center;
+     }
+    body .slide a{
+    padding: 10px;
+    font-size: 15px;
+     width: 60%;
+    text-align: center;
+}
+
+    body .sectionProduit .h2,body .nosFuturProduit h2{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 15px;
+      margin: 0 0 20px 0;
+}
+body .sectionProduit .articles{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    place-items: center;
+    gap: 0px;
+    width: 100%;
+}
+body .sectionProduit .articles .article1{
+    width: 120px;
+    height: 220px;
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+body .sectionProduit .articles .article1 .imgProduit{
+    width: 100%;
+    height: 120px;
+}
+body .sectionProduit .articles .article1 .nameAndPrice{
+    margin: 10px 0;
+}
+body .sectionProduit .articles .article1 .nameAndPrice h2{
+    font-size: 9px;
+}
+body .sectionProduit .articles .article1 .nameAndPrice span{
+    font-size: 12px;
+}
+body .sectionProduit .articles .article1 .btnAcheterArticle{
+    padding: 5px;
+}
+body .sectionProduit .articles .article1 .btnAcheterArticle p{
+    font-size: 10px;
+}
+body .sectionProduit .articles .article1 .btnAcheterArticle img{
+    width: 10%;
+}
+body .sectionProduit .articles .article1 .imgProduit img{
+    width:100%;
+    height: 100%;
+}
+body .sectionAbout h2{
+    text-align: center;
+    font-size: 15px;
+}
+body .sectionAbout .about{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    padding: 10px;
+}
+body .sectionAbout .about .imgAbout img{
+    width: 250px;
+    height: 200px;
+}
+body .sectionAbout .about  .msgAndShowMore{
+    gap: 20px;
+    width: 80%;
+    
+}
+body .sectionAbout .about  .msgAndShowMore p{
+    font-size: 13px;
+    text-align: center;
+}
+body .sectionAbout .about  .msgAndShowMore .showMore{
+    background-color: #168ec3;
+    padding: 5px;
+    width: 80%;
+}
+body .sectionAbout .about  .msgAndShowMore .showMore a{
+    font-size: 15px;
+}
+body .sectionContactUs h2{
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+body .contactUs{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  
+}
+body .contactUs .socialMedias p{
+    font-size: 15px;
+}
+body .contactUs .socialMedias .iconsSocialMedias{
+    font-size: 15px;
+}
+body .sectionContactUs .contactUs .contactForms form {
+    display: flex;
+    flex-direction: column;
+}
+body .sectionContactUs .contactUs .contactForms form  .nameAndfirstname{
+    display: flex;
+    flex-direction: column;
+}
+body .sectionContactUs .contactUs .contactForms form .telAndMessage{
+     display: flex;
+    flex-direction: column;
+}
+body .sectionContactUs .contactUs .contactForms form input{
+    width: 90%;
+    background: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border:none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.2);
+}
+body .sectionContactUs .contactUs .contactForms form textarea{
+    width: 90%;
+}
+body .sectionContactUs .contactUs .contactForms form input.envoyer{
+    margin: 20px 0 0 0;
+    width: 80%;
+}
+body footer .linksToPages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+  
+}
+
+.copyright{
+    color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    font-size: 12px;
+}  
+}
+@media  screen and (max-width: 880px) {
+    body header .appBar ul{
+    display: none;
+    }
+    body header .appBar .imgLogo p{
+    font-weight: bold;
+    font-size: 15kpx;
+    }
+    body header .appBar .menuNavBar{
+    display: block;
+    }
+    body .slide .slideText{
+    width: 50%;
+    color: #f1f1f1;
+    background: linear-gradient(rgba(0, 0, 0, 0.5));
+    border-radius: 10px; 
+    padding: 20px;
+    }
+    body .slide a{
+    padding: 10px;
+    font-size: 20px;
+}
+    body .sectionProduit .h2,body .nosFuturProduit h2{
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+body .sectionAbout h2{
+    text-align: center;
+    font-size: 20px;
+}
+body .sectionAbout .about{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+body .sectionAbout h2{
+    text-align: center;
+    font-size: 20px;
+}
+body .sectionAbout .about .imgAbout img{
+    width: 250px;
+    height: 200px;
+}
+body .sectionAbout .about  .msgAndShowMore{
+    gap: 20px;
+    width: 50%;
+    
+}
+body .sectionAbout .about  .msgAndShowMore p{
+    font-size: 13px;
+}
+body .sectionAbout .about  .msgAndShowMore .showMore{
+    background-color: #168ec3;
+    padding: 5px;
+}
+body .sectionAbout .about  .msgAndShowMore .showMore a{
+    font-size: 15px;
+}
+body .sectionContactUs h2{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+body .contactUs{
+    display: flex;
+    flex-direction: column;
+  
+}
+body .sectionContactUs .contactUs .contactForms form{
+   
+}
+body .sectionContactUs .contactUs .contactForms form input.envoyer{
+     width: 80%;
+    background: none;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 20px 0;
+    border:none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,.2);
+    color: #168ec3;
+    font-size: 15px;
+    
+}
+body footer .linksToPages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+  
+}
+
+.copyright{
+    color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    font-size: 12px;
+}  
+}  

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="./src/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+     <!--BAR DE NAVIGATION-->
+        <header class="navbar" id="navbar" >
+            <div class="appBar" id="appBar" >
+                <div class="imgLogo" id="imgLogo">
+                    <p>Hub & Devices Co.</p>
+                </div>
+                    <div class="menuNavBar">
+                        <span>MENU</span>
+                    </div>
+                    <ul>
+                        <li><a href="./index.html">Acceuil</a></li>
+                        <li><a href="./aboutUs.html">A propos</a></li>
+                        <li><a href="./contactUs.html">Contact</a></li>
+                        <li><a href="./monPanier.html"><img src="./src/img/panier.png" alt="" width="25px"></a></li>
+                    </ul>
+
+            </div>
+        </header>
+
+        <!--MOS PRODUITS-->
+         <!-- LE SILDE 1-->
+         <div class="slide" id="slide">
+            <div class="slideText">
+                <p>Chez nous, retrouvez des articles authentiques. 
+                    Testes et valides avant meme qu'on vous les proposes.
+                    Notre engagement : Simplicite d'usage. Fiabilite au quotidient.
+                    Qualite premium. Parce que vous meritez du vrai, en toute securite sans mauvaise surprise.
+                </p>
+            </div>
+          
+                <a href="#">Acheter</a>
+          
+         </div>
+          <!-- LES PRODUITS -->
+         <section class="sectionProduit" id="sectionProduit">
+            <h2 class="h2">NOS PRODUITS</h2>
+            <div class="articles" id="articles">
+                <div class="article1" id="article1">
+                    <div class="imgProduit">
+                         <img src="./src/img/Redmi rose.PNG" alt="" >
+                    </div>
+                   
+                    <div class="nameAndPrice">
+                        <h2>XIAOMI Redmi Bud 6 play rose</h2> <br>
+                        <span>35.00 $</span>
+                    </div>
+                    <div class="btnAcheterArticle">
+                        <img src="./src/img/main-avec-money-gear.png" alt="" width="22px">
+                        <p>Acheter</p>
+                    </div>
+                </div>
+
+                <div class="article1" id="article1">
+                   <div class="imgProduit">
+                         <img src="./src/img/redmi.PNG"  alt="" >
+                    </div>
+                    <div class="nameAndPrice">
+                        <h2>XIAOMI Redmi Bud 6 play bleue</h2> <br>
+                        <span>35.00 $</span>
+                    </div>
+                    <div class="btnAcheterArticle">
+                         <img src="./src/img/main-avec-money-gear.png" alt="" width="22px">
+                        <p>Acheter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- LE SILDE 2 -->
+          <div class="nosFuturProduit">
+            <h2>NOS FUTURS PRODUITS</h2>
+                 <div class="slide" id="slide">
+                    <!-- <img src="./src/img/Banner PRODUIT FAR.png" alt="">
+                    <img src="./src/img/Banner PRODUIT FAR.png" alt=""> -->
+                </div>
+          </div>   
+         
+        <!-- A PROPOS DE NOUS-->
+         <section class="sectionAbout" id="about">
+            <h2>A PROPOS DE NOUS</h2>
+            <div class="about" id="about">
+                <div class="imgAbout" id="imgAbout">
+                    <img src="./src/img/baladeur.jpg" alt="">
+                </div>
+                <div class="msgAndShowMore" id="msgAndShowMore">
+                     <p>Chez nous, retrouvez des articles authentiques. 
+                    Testes et valides avant meme qu'on vous les proposes.
+                    Notre engagement : Simplicite d'usage. Fiabilite au quotidient.
+                    Qualite premium. Parce que vous meritez du vrai, en toute securite sans mauvaise surprise.
+                    </p>
+                    <div class="showMore" id="showMore">
+                        <a href="./aboutUs.html">Tout savoir sur nous</a>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+             <!--LE SILDE 3-->
+         <!-- <div class="slide3" id="slide3">
+
+         </div> -->
+
+         <!--CONTACTEZ-NOUS -->
+         <section class="sectionContactUs" id="sectionContactUs">
+            <h2>CONTACTEZ-NOUS</h2>
+            <div class="contactUs">
+                <div class="socialMedias" id="socialMedias">
+                    <p>Nos reseaux sociaux</p>
+                    <div class="iconsSocialMedias" id="iconSocialMedias">
+                        <span>Facebook</span> <br><span>Instagam</span>
+                        <p>Hub & Devices Co.</p>
+                    </div>
+                    <div class="telContact" id="telContact">
+                        <p>(243) 840513896</p>
+                    </div>
+                </div>
+                <div class="contactForms">
+                    <form action="" method="post">
+                        <div class="nameAndfirstname">
+                            <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="nom" placeholder="Ecrivez votre nom, (Ex :Kabuya)">
+                            <label for="prenom">Prenom</label>
+                            <input type="text" name="postnom" id="postnom" placeholder="Ecrivez votre prenom, (Ex :Joshua)">
+                        </div>
+                        <div class="telAndMessage">
+                         <label for="tel">Telephone</label>
+                            <input type="tel" name="tel" id="tel" placeholder="Votre numero, (Ex: 0810513896)">
+                             <label for="message">Nous laissez un message :</label>
+                            <textarea name="message" id="message" cols="10px" rows="15px" placeholder="Laissez nous un message..."></textarea>
+                         <input type="button" value="Envoyer" class="envoyer">
+                        </div>   
+                           <br>
+                    </form>
+                    
+                </div>
+            </div>    
+         </section>
+         <footer>
+            <div class="linksToPages">
+                <a href="./index.html"><p>Accueil</p></a>
+                <a href="./aboutUs.html"><p>A propos de nous</p></a>
+                <a href="./contactUs.html"><p>Contact</p></a>
+                <a href="./monPanier.html"><p>Redmi</p></a>
+            </div>
+            <p class="copyright">Copyright Hub & Devices Co. 2027</p>
+         </footer> 
+   
+</body>
+</html>
